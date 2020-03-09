@@ -48,6 +48,11 @@ def get_rating():
                 response = int(response)
                 reason = input("Please explain why you gave a rating of {}: ".format(response))
 
+            rating_reason.append(response)
+            rating_reason.append(reason)
+            return rating_reason
+
+
         except ValueError:
             print(error)
 
