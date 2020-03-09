@@ -1,9 +1,8 @@
 # Component 2 - Author Name
 
-author = {}
-author_input = input("Author: ")
+author = input("Author: ")
 
-if author_input == "":
+if author == "":
     print("Since you left this field blank the author name will become 'Anonymous'.")
     author = "Anonymous"
 
