@@ -45,7 +45,12 @@ def text_helper(question, possible_answers, items_per_line, required=None):
 
 # **Set up genre list and sort it**
 genre_list = ["Action", "Adventure", "Detective", "Crime",
-              "Fan-Fiction", "Anthology"]
+              "Fan-Fiction", "Anthology", "Mystery", "Science Fiction (Sci-Fi)",
+              "Western", "Steam Punk", "Drama", "Horror", "Suspense", "Thriller",
+              "Romance", "Chic Lit", "Humor", "Satire", "Classic", "Historical Fiction",
+              "Realistic Fiction", "Narrative", "Biography", "Autobiography", "Memoir",
+              "Comic", "Graphic Novel", "Fable", "Fairy Tale", "Fantasy", "Legend",
+              "Magical Realism", "Mythology"]
 
 genre_list.sort()
 
