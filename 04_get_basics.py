@@ -12,9 +12,18 @@ def text_helper(question, possible_answers, items_per_line, required=None):
     valid = False
     while not valid:
 
-        for item in possible_answers:
-            print("{}. {}".format(possible_answers.index(item)+1, item))
+        # Output numbered list with specified number of items per line
+        count_ans = 0
 
+        for item in possible_answers:
+            print("{}. {}".format(possible_answers.index(item)+1, item),
+                  end="\t")
+            count_ans += 1
+            if count_ans % items_per_line == 0:
+                print()
+
+        print()
+        print()
         response = input("Choose: ")
 
         # Checks that response has been given if required
@@ -22,7 +31,7 @@ def text_helper(question, possible_answers, items_per_line, required=None):
             print(error)
             continue
 
-        # check i fthe response is a number / choice, if it is, change
+        # check if the response is a number / choice, if it is, change
         # it to the option in the list
 
         try:
@@ -50,7 +59,7 @@ genre_list = ["Action", "Adventure", "Detective", "Crime",
               "Romance", "Chic Lit", "Humor", "Satire", "Classic", "Historical Fiction",
               "Realistic Fiction", "Narrative", "Biography", "Autobiography", "Memoir",
               "Comic", "Graphic Novel", "Fable", "Fairy Tale", "Fantasy", "Legend",
-              "Magical Realism", "Mythology"]
+              "Magical Realism", "Mythology", "Short Story"]
 
 genre_list.sort()
 
@@ -60,4 +69,4 @@ genre_list = [x.lower() for x in genre_list]
 
 genre = text_helper("Please choose a genre", genre_list, 4, "yes")
 
-print("Genre: {}".format(genre))
+print("Genre: '{}'".format(genre))
