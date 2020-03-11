@@ -1,0 +1,9 @@
+educational
+epic
+historical
+informative
+narrative
+old-fashioned
+realistic
+traditional
+true-to-life
