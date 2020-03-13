@@ -78,5 +78,6 @@ scary_list = make_list("scary")
 
 # Test that list had been generated
 genre = "action"
+print(genre)
 adjective = text_helper("Choose an adjective", "yes", 4, action_list)
 print(adjective)

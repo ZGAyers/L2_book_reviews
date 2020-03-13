@@ -1,0 +1,34 @@
+Action
+Adventure
+Detective
+Crime
+Fan-Fiction
+Anthology 
+Mystery
+Science Fiction (Sci-Fi)
+Western
+Steam Punk
+Drama
+Horror
+Suspense
+Thriller
+Romance
+Chic Lit
+Humor
+Satire
+Classic
+Historical Fiction
+Realistic Fiction
+Narrative
+Biography
+Autobiography
+Memoir
+Comic
+Graphic Novel
+Fable
+Fairy Tale
+Fantasy
+Legend
+Magical Realism
+Mythology
+Short Story
