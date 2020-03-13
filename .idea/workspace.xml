@@ -30,11 +30,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="05_list_from_csv.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="05_list_from_csv.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/05_list_from_csv.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
               <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="06_program_skeleton.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/06_program_skeleton.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="691">
+              <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -100,6 +110,7 @@
         <option value="$PROJECT_DIR$/03_get_rating.py" />
         <option value="$PROJECT_DIR$/04_get_basics.py" />
         <option value="$PROJECT_DIR$/05_list_from_csv.py" />
+        <option value="$PROJECT_DIR$/06_program_skeleton.py" />
       </list>
     </option>
   </component>
@@ -162,7 +173,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.05_list_from_csv">
+  <component name="RunManager" selected="Python.06_program_skeleton">
     <configuration default="false" name="02_author_name" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,23 +187,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="02_book_reviews" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_author_name.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="recipe_moderniser_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../01_recipie_moderniser" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="02_book_reviews" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../01_recipie_moderniser/recipe_moderniser_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -244,6 +238,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="02_book_reviews" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_list_from_csv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="06_program_skeleton" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="02_book_reviews" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_program_skeleton.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -384,18 +395,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.02_author_name" />
-      <item index="1" class="java.lang.String" itemvalue="Python.recipe_moderniser_v2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.03_get_rating" />
-      <item index="3" class="java.lang.String" itemvalue="Python.04_get_basics" />
-      <item index="4" class="java.lang.String" itemvalue="Python.05_list_from_csv" />
+      <item index="1" class="java.lang.String" itemvalue="Python.03_get_rating" />
+      <item index="2" class="java.lang.String" itemvalue="Python.04_get_basics" />
+      <item index="3" class="java.lang.String" itemvalue="Python.05_list_from_csv" />
+      <item index="4" class="java.lang.String" itemvalue="Python.06_program_skeleton" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.05_list_from_csv" />
-        <item index="1" class="java.lang.String" itemvalue="Python.04_get_basics" />
-        <item index="2" class="java.lang.String" itemvalue="Python.03_get_rating" />
-        <item index="3" class="java.lang.String" itemvalue="Python.02_author_name" />
-        <item index="4" class="java.lang.String" itemvalue="Python.recipe_moderniser_v2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.06_program_skeleton" />
+        <item index="1" class="java.lang.String" itemvalue="Python.05_list_from_csv" />
+        <item index="2" class="java.lang.String" itemvalue="Python.04_get_basics" />
+        <item index="3" class="java.lang.String" itemvalue="Python.03_get_rating" />
+        <item index="4" class="java.lang.String" itemvalue="Python.02_author_name" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +432,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21558164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="961" y="31" width="958" height="1008" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.089647815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="961" y="31" width="958" height="1008" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -610,6 +621,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_program_skeleton.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
           <folding />
         </state>
       </provider>
