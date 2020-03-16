@@ -6,14 +6,15 @@ Fan-Fiction
 Anthology 
 Mystery
 Science Fiction (Sci-Fi)
-Western
+Western	
 Steam Punk
 Drama
 Horror
 Suspense
 Thriller
-Romance
-Chic Lit
+Distopian
+Romance	
+Chic Lit	
 Humor
 Satire
 Classic

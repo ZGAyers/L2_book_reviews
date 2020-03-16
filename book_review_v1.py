@@ -206,45 +206,60 @@ overall_choice = text_helper("Please choose what you thought of the book overall
 
 # If the reader liked the book...
 if book_rating > 3:
-    # about the authors writing
+    # about the authors writing - positive
     writing_positive = [x.lower() for x in writing_positive]
     writing_choice = text_helper("Please choose what you thought of the authors writing",
                                  writing_positive, 4, "yes")
     all_positive = [x.lower() for x in all_positive]
 
-    # first adjective
+    # first adjective - positive
     first_adjective = text_helper("Please choose an adjective describing the book",
                                   all_positive, 4, "yes")
-    # second adjective
+    # second adjective - positive
     second_adjective = text_helper("Please choose another adjective describing the book",
+                                  all_positive, 4, "yes")
+    # third adjective - positive
+    third_adjective = text_helper("Please choose another adjective describing the book",
                                   all_positive, 4, "yes")
 
 # If the the reader didn't like the book...
 elif book_rating < 3:
-    # about the authors writing
+    # about the authors writing - negative
     writing_negative = [x.lower() for x in writing_negative]
     writing_choice = text_helper("Please choose what you thought of the authors writing",
                                  writing_negative, 4, "yes")
 
-    # first adjective
+    # first adjective - negative
     all_negative = [x.lower() for x in all_negative]
     first_adjective = text_helper("Please choose an adjective describing the book",
                                   all_negative, 4, "yes")
-    # second adjective
+    # second adjective - negative
     second_adjective = text_helper("Please choose another adjective describing the book",
                                   all_negative, 4, "yes")
+    # third adjective - negative
+    third_adjective = text_helper("Please choose another adjective describing the book",
+                                  all_negative, 4, "yes")
+
 # If the reader didn't mind the book...
 else:
-    # about the authors writing
+    # about the authors writing - neutral
     writing_neutral = [x.lower() for x in writing_neutral]
     writing_choice = text_helper("Please choose what you thought of the authors writing",
                                  writing_neutral, 4, "yes")
 
-    # first adjective
+    # first adjective - neutral
     all_neutral = [x.lower() for x in all_neutral]
     first_adjective = text_helper("Please choose an adjective describing the book",
                                   all_neutral, 4, "yes")
-    # second adjective
+    # second adjective - neutral
     second_adjective = text_helper("Please choose another adjective describing the book",
                                   all_neutral, 4, "yes")
+    # third adjective - neutral
+    third_adjective = text_helper("Please choose another adjective describing the book",
+                                  all_neutral, 4, "yes")
+
+# reader gives adjective to say what the book is...
+book_is = [x.lower() for x in book_is]
+book_is_choice = text_helper("The book is...", book_is, 4, "yes")
+
 
