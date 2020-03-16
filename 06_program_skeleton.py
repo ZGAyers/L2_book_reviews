@@ -36,7 +36,7 @@ if plot != "" and setting != "":
     first = "Set in {}, '{}' is {}.".format(setting, title, plot)
 elif plot != "":
     # make first letter capital
-    first = "{}, {} is what I would call {} in {}.".format(first_adjectives[0].title(), first_adjectives[1], setting,  title)
+    first = "{}, {} is what I would call {} in {}.".format(first_adjectives[0].title(), first_adjectives[1], plot,  title)
 else:
     first = "{} is both {} and {}.".format(title.title(), first_adjectives[0], first_adjectives[1])
 
@@ -76,4 +76,5 @@ sixth = "This is {} stars rounded {} {}".format(rating, up_down, reason)
 
 review = [first, second, third, fourth, fifth, sixth]
 
-print(review)
+for item in review:
+    print(item)

@@ -52,7 +52,6 @@ def get_rating():
             rating_reason.append(reason)
             return rating_reason
 
-
         except ValueError:
             print(error)
 
