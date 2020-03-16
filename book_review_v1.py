@@ -142,13 +142,28 @@ def make_list(file_name):
 # Set up blank Adjective Lists
 genre_list = []
 all_negative = all_positive = all_neutral = []
+overall = []
+underlying_story = []
 action_list = fantasy_list = funny_list = historical_list = scary_list = []
+writing_negative = writing_positive = writing_neutral = []
+ending = []
+book_is = []
 
 # **Set up genre list and sort it**
 genre_list = make_list("genre")
 all_negative = make_list("all_negative")
 all_positive = make_list("all_positive")
 all_neutral = make_list("all_neutral")
+
+overall = make_list("overall")
+book_is = make_list("book_is")
+
+writing_negative = make_list("writing_negative")
+writing_neutral = make_list("writing_neutral")
+writing_positive = make_list("writing_positive")
+
+underlying_story = make_list("underlying_story")
+ending = make_list("ending")
 
 action_list = make_list("action")
 fantasy_list = make_list("fantasy")
@@ -178,10 +193,58 @@ genre_list = [x.lower() for x in genre_list]
 
 genre = text_helper("Please choose a genre", genre_list, 4, "yes")
 
+# plot of the book
+plot = input("Please enter a plot summary: ")
+# setting of the book
+setting = input("Please enter the setting/place the story is set in: ")
 
+# overall thoughts on book
+overall = [x.lower() for x in overall]
 
+overall_choice = text_helper("Please choose what you thought of the book overall",
+                                 overall, 4, "yes")
 
+# If the reader liked the book...
+if book_rating > 3:
+    # about the authors writing
+    writing_positive = [x.lower() for x in writing_positive]
+    writing_choice = text_helper("Please choose what you thought of the authors writing",
+                                 writing_positive, 4, "yes")
+    all_positive = [x.lower() for x in all_positive]
 
+    # first adjective
+    first_adjective = text_helper("Please choose an adjective describing the book",
+                                  all_positive, 4, "yes")
+    # second adjective
+    second_adjective = text_helper("Please choose another adjective describing the book",
+                                  all_positive, 4, "yes")
 
+# If the the reader didn't like the book...
+elif book_rating < 3:
+    # about the authors writing
+    writing_negative = [x.lower() for x in writing_negative]
+    writing_choice = text_helper("Please choose what you thought of the authors writing",
+                                 writing_negative, 4, "yes")
 
+    # first adjective
+    all_negative = [x.lower() for x in all_negative]
+    first_adjective = text_helper("Please choose an adjective describing the book",
+                                  all_negative, 4, "yes")
+    # second adjective
+    second_adjective = text_helper("Please choose another adjective describing the book",
+                                  all_negative, 4, "yes")
+# If the reader didn't mind the book...
+else:
+    # about the authors writing
+    writing_neutral = [x.lower() for x in writing_neutral]
+    writing_choice = text_helper("Please choose what you thought of the authors writing",
+                                 writing_neutral, 4, "yes")
+
+    # first adjective
+    all_neutral = [x.lower() for x in all_neutral]
+    first_adjective = text_helper("Please choose an adjective describing the book",
+                                  all_neutral, 4, "yes")
+    # second adjective
+    second_adjective = text_helper("Please choose another adjective describing the book",
+                                  all_neutral, 4, "yes")
 
