@@ -189,13 +189,15 @@ book_rating = rate_reason[0]
 book_reason = rate_reason[1]
 
 
-# choose a feeling for user
+# choose adjectives and sentences from rating
 if book_rating > 2:
     feeling = "enjoyed"
     feeling2 = "like a breath of fresh air"
+    recommend = "recommend"
 else:
     feeling = "disliked"
     feeling2 = "disappointing as the book has potential"
+    recommend = "not recommend"
 # genre of book
 genre_list = [x.lower() for x in genre_list]
 
