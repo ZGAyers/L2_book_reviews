@@ -293,11 +293,11 @@ first = "{} and {} are two words I would use to describe the book by {}.".format
 if plot != "" and setting != "" and character != "":
     second = "Set in {}, we follow {} who is {}.".format(setting, character.title(), plot)
 elif plot != "" and character != "":
-    second = "In '{}' we follow {} who is {}.".format(title, character.title(), plot)
+    second = "In '{}' we follow {} who is {}.".format(title.title(), character.title(), plot)
 elif plot != "":
-    second = "In '{}' we are thrown into the story as our character {}.".format(title, plot)
+    second = "In '{}' we are thrown into the story as our character {}.".format(title.title(), plot)
 else:
-    second = "{} is an {} {} book that I immensely {} reading".format(title, third_adjective, genre, feeling)
+    second = "'{}' is an {} {} book that I immensely {} reading".format(title.title(), third_adjective, genre, feeling)
 
 # Third Sentence
 third = "The writing style in this book is {} which is {}.".format(writing_choice, feeling2)
