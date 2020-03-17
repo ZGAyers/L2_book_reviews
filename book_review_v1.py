@@ -188,21 +188,39 @@ print()
 book_rating = rate_reason[0]
 book_reason = rate_reason[1]
 
+
+# choose a feeling for user
+if book_rating > 2:
+    feeling = "enjoyed"
+    feeling2 = "like a breath of fresh air"
+else:
+    feeling = "disliked"
+    feeling2 = "disappointing as the book has potential"
 # genre of book
 genre_list = [x.lower() for x in genre_list]
 
 genre = text_helper("Please choose a genre", genre_list, 4, "yes")
 
-# plot of the book
-plot = input("Please enter a plot summary: ")
 # setting of the book
 setting = input("Please enter the setting/place the story is set in: ")
+
+# main character name
+character = input("Please enter the main characters name: ")
+
+# plot of the book
+plot = input("Please enter a plot summary: They are ")
 
 # overall thoughts on book
 overall = [x.lower() for x in overall]
 
 overall_choice = text_helper("Please choose what you thought of the book overall",
                                  overall, 4, "yes")
+# Ending of the book
+ending = [x.lower() for x in ending]
+
+ending_choice = text_helper("What did you think of the ending?",
+                                 ending, 4, "yes")
+
 
 # If the reader liked the book...
 if book_rating > 3:
@@ -210,6 +228,7 @@ if book_rating > 3:
     writing_positive = [x.lower() for x in writing_positive]
     writing_choice = text_helper("Please choose what you thought of the authors writing",
                                  writing_positive, 4, "yes")
+
     all_positive = [x.lower() for x in all_positive]
 
     # first adjective - positive
@@ -262,4 +281,32 @@ else:
 book_is = [x.lower() for x in book_is]
 book_is_choice = text_helper("The book is...", book_is, 4, "yes")
 
+# underlying story
+underlying_story = [x.lower() for x in underlying_story]
+underlying_story_choice = text_helper("What did you think of the underlying story: ", underlying_story, 4, "yes")
 
+# First Sentence
+first = "{} and {} are two words I would use to describe the book by {}.".format(first_adjective.title(), second_adjective,
+                                                                                 author)
+
+# Second Sentence
+if plot != "" and setting != "" and character != "":
+    second = "Set in {}, we follow {} who is {}.".format(setting, character.title(), plot)
+elif plot != "" and character != "":
+    second = "In '{}' we follow {} who is {}.".format(title, character.title(), plot)
+elif plot != "":
+    second = "In '{}' we are thrown into the story as our character {}.".format(title, plot)
+else:
+    second = "{} is an {} {} book that I immensely {} reading".format(title, third_adjective, genre, feeling)
+
+# Third Sentence
+third = "The writing style in this book is {} which is {}.".format(writing_choice, feeling2)
+
+# Fourth Sentence
+fourth = "The underlying story is {} and the ending is {}".format(underlying_story_choice, ending_choice)
+
+# Put together the review
+review = first, second, third, fourth
+
+for item in review:
+    print(item)
