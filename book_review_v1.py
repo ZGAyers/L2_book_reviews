@@ -194,14 +194,24 @@ if book_rating > 2:
     feeling = "enjoyed"
     feeling2 = "like a breath of fresh air"
     recommend = "recommend"
+    worth_it = "worth"
 else:
     feeling = "disliked"
     feeling2 = "disappointing as the book has potential"
     recommend = "not recommend"
+    worth_it = "not worth"
 # genre of book
 genre_list = [x.lower() for x in genre_list]
 
 genre = text_helper("Please choose a genre", genre_list, 4, "yes")
+
+# ask user if book is a novel
+book_type_q = not_blank("Is this book a novel? ",
+                      "Please fill in this field")
+if book_type_q == "yes":
+    book_type = "novel"
+else:
+    book_type = "book"
 
 # setting of the book
 setting = input("Please enter the setting/place the story is set in: ")
@@ -288,8 +298,8 @@ underlying_story = [x.lower() for x in underlying_story]
 underlying_story_choice = text_helper("What did you think of the underlying story: ", underlying_story, 4, "yes")
 
 # First Sentence
-first = "{} and {} are two words I would use to describe the book by {}.".format(first_adjective.title(), second_adjective,
-                                                                                 author)
+first = "{} and {} are two words I would use to describe the {} by {}.".format(first_adjective.title(), second_adjective,
+                                                                                 book_type, author)
 
 # Second Sentence
 if plot != "" and setting != "" and character != "":
@@ -299,16 +309,25 @@ elif plot != "" and character != "":
 elif plot != "":
     second = "In '{}' we are thrown into the story as our character {}.".format(title.title(), plot)
 else:
-    second = "'{}' is an {} {} book that I immensely {} reading".format(title.title(), third_adjective, genre, feeling)
+    second = "'{}' is an {} {} {} that I immensely {} reading".format(title.title(), third_adjective, genre, book_type,
+                                                                      feeling)
 
 # Third Sentence
-third = "The writing style in this book is {} which is {}.".format(writing_choice, feeling2)
+third = "The writing style in this {} is {} which is {}.".format(book_type, writing_choice, feeling2)
 
 # Fourth Sentence
 fourth = "The underlying story is {} and the ending is {}".format(underlying_story_choice, ending_choice)
 
+# Fifth Sentence
+fifth = "Overall, I {} this {} and would {} it to others.".format(overall_choice, book_type, recommend)
+
+# Sixth Sentence
+sixth = "'{}' deserves {} stars. I definitely believe it is {} reading.".format(title.title(), book_rating, worth_it)
+
+# Seventh Sentence
+seventh = "I gave '{}' this rating because {}.".format(title.title(), rate_reason)
 # Put together the review
-review = first, second, third, fourth
+review = first, second, third, fourth, fifth, sixth
 
 for item in review:
     print(item)
