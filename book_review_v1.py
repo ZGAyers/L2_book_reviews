@@ -330,13 +330,8 @@ fifth = "Overall, I {} this {} and would {} it to others.".format(overall_choice
 # Sixth Sentence
 sixth = "'{}' deserves {} stars. I definitely believe it is {} reading.".format(title.title(), book_rating, worth_it)
 
-# Seventh Sentence
-if rate_reason != "":
-    seventh = "I gave '{}' this rating because {}.".format(title.title(), rate_reason[1])
-else:
-    seventh = ""
 # Put together the review
-review = first, second, third, fourth, fifth, sixth, seventh
+review = first, second, third, fourth, fifth, sixth
 
 for item in review:
     print(item)
