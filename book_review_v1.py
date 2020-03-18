@@ -56,12 +56,12 @@ def get_rating():
                         "You have entered a decimal, would you like us to round up or down: ").lower()
 
                     if round_it == "up":
-                        default_reason = "The book was worth more than {} stars.".format(int(response))
+                        default_reason = "the book was worth more than {} stars.".format(int(response))
                         response = math.ceil(response)
                         break
 
                     elif round_it == "down":
-                        default_reason = "It is not worth {} stars.".format(math.ceil(response))
+                        default_reason = "it is not worth {} stars.".format(math.ceil(response))
                         response = int(response)
                         break
                     else:
@@ -148,6 +148,7 @@ action_list = fantasy_list = funny_list = historical_list = scary_list = []
 writing_negative = writing_positive = writing_neutral = []
 ending = []
 book_is = []
+vowels = ["a", "e", "i", "o", "u"]
 
 # **Set up genre list and sort it**
 genre_list = make_list("genre")
@@ -248,10 +249,10 @@ if book_rating > 3:
                                   all_positive, 4, "yes")
     # second adjective - positive
     second_adjective = text_helper("Please choose another adjective describing the book",
-                                  all_positive, 4, "yes")
+                                      all_positive, 4, "yes")
     # third adjective - positive
     third_adjective = text_helper("Please choose another adjective describing the book",
-                                  all_positive, 4, "yes")
+                                      all_positive, 4, "yes")
 
 # If the the reader didn't like the book...
 elif book_rating < 3:
@@ -302,6 +303,11 @@ first = "{} and {} are two words I would use to describe the {} by {}.".format(f
                                                                                  book_type, author)
 
 # Second Sentence
+if third_adjective in vowels:
+    determiner = "an"
+else:
+    determiner = "a"
+
 if plot != "" and setting != "" and character != "":
     second = "Set in {}, we follow {} who is {}.".format(setting, character.title(), plot)
 elif plot != "" and character != "":
@@ -309,7 +315,7 @@ elif plot != "" and character != "":
 elif plot != "":
     second = "In '{}' we are thrown into the story as our character {}.".format(title.title(), plot)
 else:
-    second = "'{}' is an {} {} {} that I immensely {} reading".format(title.title(), third_adjective, genre, book_type,
+    second = "'{}' is {} {} {} {} that I immensely {} reading".format(title.title(), determiner, third_adjective, genre, book_type,
                                                                       feeling)
 
 # Third Sentence
@@ -325,9 +331,12 @@ fifth = "Overall, I {} this {} and would {} it to others.".format(overall_choice
 sixth = "'{}' deserves {} stars. I definitely believe it is {} reading.".format(title.title(), book_rating, worth_it)
 
 # Seventh Sentence
-seventh = "I gave '{}' this rating because {}.".format(title.title(), rate_reason)
+if rate_reason != "":
+    seventh = "I gave '{}' this rating because {}.".format(title.title(), rate_reason[1])
+else:
+    seventh = ""
 # Put together the review
-review = first, second, third, fourth, fifth, sixth
+review = first, second, third, fourth, fifth, sixth, seventh
 
 for item in review:
     print(item)
