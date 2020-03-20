@@ -33,7 +33,7 @@
       <file leaf-file-name="05_list_from_csv.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/05_list_from_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
+            <state relative-caret-position="790">
               <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
               <folding />
             </state>
@@ -43,7 +43,7 @@
       <file leaf-file-name="06_program_skeleton.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/06_program_skeleton.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="782">
               <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
               <folding />
             </state>
@@ -53,21 +53,11 @@
       <file leaf-file-name="book_review_v1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/book_review_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="320" column="16" selection-start-line="320" selection-start-column="16" selection-end-line="320" selection-end-column="16" />
+            <state relative-caret-position="-1147">
+              <caret line="236" column="18" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
               <folding>
                 <element signature="e#38#51#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_RPSGame_V2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../2019/COM101/91883_4_Programming/03_RPS/06_RPSGame_V2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-629">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -148,8 +138,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="777" />
-    <option name="width" value="1150" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -457,15 +447,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="777" y="0" width="1150" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21693122" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25678498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6755603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="961" y="31" width="958" height="1008" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81323373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="961" y="31" width="958" height="1008" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -846,14 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_list_from_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01_text_checker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -870,14 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../2019/COM101/91883_4_Programming/03_RPS/06_RPSGame_V2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../2019/COM101/91883_4_Programming/03_RPS/03_RPS_RandonToken.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -888,16 +862,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/06_program_skeleton.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="782">
           <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../2019/COM101/91883_4_Programming/03_RPS/06_RPSGame_V2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_list_from_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book_review_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="320" column="16" selection-start-line="320" selection-start-column="16" selection-end-line="320" selection-end-column="16" />
+        <state relative-caret-position="-1147">
+          <caret line="236" column="18" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
           <folding>
             <element signature="e#38#51#0" expanded="true" />
           </folding>

@@ -37,23 +37,25 @@ def get_rating():
     valid = False
     while not valid:
         try:
-            response = float(input("Rating: "))
+            response = float(input("*Rating: "))
 
             if response > 5:
                 print("Ok - the rating will be recorded as '5' - the highest possible rating")
                 response = 5
-                reason = input("Please give a reason for rating this book so highly: ")
+                reason = not_blank("*Please give a reason for rating this book so highly: ",
+                                   "This field is required")
 
             elif response < 1:
                 print("Ok - the rating will be recorded as '1' - the lowest possible rating")
                 response = 1
-                reason = input("Please enter a reason for the low rating: ")
+                reason = not_blank("*Please enter a reason for the low rating: ",
+                                   "This field is required")
 
             elif response % 1 != 0:
                 valid_round = False
                 while not valid_round:
                     round_it = input(
-                        "You have entered a decimal, would you like us to round up or down: ").lower()
+                        "*You have entered a decimal, would you like us to round up or down: ").lower()
 
                     if round_it == "up":
                         default_reason = "the book was worth more than {} stars.".format(int(response))
@@ -73,7 +75,8 @@ def get_rating():
                     reason = default_reason
             else:
                 response = int(response)
-                reason = input("Please explain why you gave a rating of {}: ".format(response))
+                reason = not_blank("*Please explain why you gave a rating of {}: ".format(response),
+                                   "This field is required")
 
             rating_reason.append(response)
             rating_reason.append(reason)
@@ -150,6 +153,10 @@ ending = []
 book_is = []
 vowels = ["a", "e", "i", "o", "u"]
 
+# Bold print out text option
+bold = "\033[1m"
+reset = "\033[0;0m"
+
 # **Set up genre list and sort it**
 genre_list = make_list("genre")
 all_negative = make_list("all_negative")
@@ -173,8 +180,15 @@ historical_list = make_list("historical")
 scary_list = make_list("scary")
 
 
+# Start of running program
+print(bold, "--Book Review Generator--", reset)
+print("In this generator you will be required to either choose or enter certain fields.")
+print("It will then generate a personalised review for you to then copy and use.")
+print("If you see a star next to a field (*) it means that field is required.")
+print("And lastly please refrain from entering any ", bold, "capitals", reset, "or ", bold, "full stops", reset,
+      "unless it is in the title or author")
 # ask the user for the title of the book
-title = not_blank("Title: ",
+title = not_blank("*Title: ",
                   "Please type in a title")
 
 # ask user for the author and if no author is given set to "Anonymous"
@@ -204,10 +218,10 @@ else:
 # genre of book
 genre_list = [x.lower() for x in genre_list]
 
-genre = text_helper("Please choose a genre", genre_list, 4, "yes")
+genre = text_helper("*Please choose a genre", genre_list, 4, "yes")
 
 # ask user if book is a novel
-book_type_q = not_blank("Is this book a novel? ",
+book_type_q = not_blank("*Is this book a novel? ",
                       "Please fill in this field")
 if book_type_q == "yes":
     book_type = "novel"
@@ -226,12 +240,12 @@ plot = input("Please enter a plot summary: They are ")
 # overall thoughts on book
 overall = [x.lower() for x in overall]
 
-overall_choice = text_helper("Please choose what you thought of the book overall",
+overall_choice = text_helper("*Please choose what you thought of the book overall",
                                  overall, 4, "yes")
 # Ending of the book
 ending = [x.lower() for x in ending]
 
-ending_choice = text_helper("What did you think of the ending?",
+ending_choice = text_helper("*What did you think of the ending?",
                                  ending, 4, "yes")
 
 
@@ -239,64 +253,64 @@ ending_choice = text_helper("What did you think of the ending?",
 if book_rating > 3:
     # about the authors writing - positive
     writing_positive = [x.lower() for x in writing_positive]
-    writing_choice = text_helper("Please choose what you thought of the authors writing",
+    writing_choice = text_helper("*Please choose what you thought of the authors writing",
                                  writing_positive, 4, "yes")
 
     all_positive = [x.lower() for x in all_positive]
 
     # first adjective - positive
-    first_adjective = text_helper("Please choose an adjective describing the book",
+    first_adjective = text_helper("*Please choose an adjective describing the book",
                                   all_positive, 4, "yes")
     # second adjective - positive
-    second_adjective = text_helper("Please choose another adjective describing the book",
+    second_adjective = text_helper("*Please choose another adjective describing the book",
                                       all_positive, 4, "yes")
     # third adjective - positive
-    third_adjective = text_helper("Please choose another adjective describing the book",
+    third_adjective = text_helper("*Please choose another adjective describing the book",
                                       all_positive, 4, "yes")
 
 # If the the reader didn't like the book...
 elif book_rating < 3:
     # about the authors writing - negative
     writing_negative = [x.lower() for x in writing_negative]
-    writing_choice = text_helper("Please choose what you thought of the authors writing",
+    writing_choice = text_helper("*Please choose what you thought of the authors writing",
                                  writing_negative, 4, "yes")
 
     # first adjective - negative
     all_negative = [x.lower() for x in all_negative]
-    first_adjective = text_helper("Please choose an adjective describing the book",
+    first_adjective = text_helper("*Please choose an adjective describing the book",
                                   all_negative, 4, "yes")
     # second adjective - negative
-    second_adjective = text_helper("Please choose another adjective describing the book",
+    second_adjective = text_helper("*Please choose another adjective describing the book",
                                   all_negative, 4, "yes")
     # third adjective - negative
-    third_adjective = text_helper("Please choose another adjective describing the book",
+    third_adjective = text_helper("*Please choose another adjective describing the book",
                                   all_negative, 4, "yes")
 
 # If the reader didn't mind the book...
 else:
     # about the authors writing - neutral
     writing_neutral = [x.lower() for x in writing_neutral]
-    writing_choice = text_helper("Please choose what you thought of the authors writing",
+    writing_choice = text_helper("*Please choose what you thought of the authors writing",
                                  writing_neutral, 4, "yes")
 
     # first adjective - neutral
     all_neutral = [x.lower() for x in all_neutral]
-    first_adjective = text_helper("Please choose an adjective describing the book",
+    first_adjective = text_helper("*Please choose an adjective describing the book",
                                   all_neutral, 4, "yes")
     # second adjective - neutral
-    second_adjective = text_helper("Please choose another adjective describing the book",
+    second_adjective = text_helper("*Please choose another adjective describing the book",
                                   all_neutral, 4, "yes")
     # third adjective - neutral
-    third_adjective = text_helper("Please choose another adjective describing the book",
+    third_adjective = text_helper("*Please choose another adjective describing the book",
                                   all_neutral, 4, "yes")
 
 # reader gives adjective to say what the book is...
 book_is = [x.lower() for x in book_is]
-book_is_choice = text_helper("The book is...", book_is, 4, "yes")
+book_is_choice = text_helper("*The book is...", book_is, 4, "yes")
 
 # underlying story
 underlying_story = [x.lower() for x in underlying_story]
-underlying_story_choice = text_helper("What did you think of the underlying story: ", underlying_story, 4, "yes")
+underlying_story_choice = text_helper("*What did you think of the underlying story: ", underlying_story, 4, "yes")
 
 # First Sentence
 first = "{} and {} are two words I would use to describe the {} by {}.".format(first_adjective.title(), second_adjective,
@@ -330,6 +344,8 @@ fifth = "Overall, I {} this {} and would {} it to others.".format(overall_choice
 # Sixth Sentence
 sixth = "'{}' deserves {} stars. I definitely believe it is {} reading.".format(title.title(), book_rating, worth_it)
 
+# Reason
+seventh = "I gave '{}' {} stars because {}.".format(title.title(), book_rating, rate_reason)
 # Put together the review
 review = first, second, third, fourth, fifth, sixth
 
